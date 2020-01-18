@@ -19,4 +19,4 @@ EXPOSE 8080 4180
 WORKDIR /opt/bitnami/oauth2-proxy
 USER 1001
 ENTRYPOINT [ "oauth2_proxy" ]
-CMD [ "--upstream=http://0.0.0.0:8080/", "--http-address=0.0.0.0:4180" ]
+CMD [ "--config=/opt/bitnami/oauth2-proxy/oauth2_proxy.cfg" ]
